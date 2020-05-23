@@ -1,0 +1,73 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['/home']">Home</a>
+    <a class="navbar-brand" [routerLink]="['/login']">Logout</a>
+  </nav>
+
+<div class="profile">
+
+<h1>Hello {{currentUser.firstName}}</h1>
+<h5>Welcome to your profile</h5>
+<br>
+<br>
+
+
+<div>
+
+<table class="table">
+    <tbody>
+      <tr>
+        <th scope="row">Usename: </th>
+        <td>{{currentUser.username}}</td>
+        <td><strong>E-mail:</strong></td>
+        <td>{{currentUser.email}}</td>
+        <td><strong>Date of birth:</strong></td>
+        <td>{{currentUser.birthDay}}</td>
+      </tr>
+      <tr>
+        <th scope="row">First Name:</th>
+        <td>{{currentUser.firstName}}</td>
+        <td><strong>Middle Name:</strong></td>
+        <td>{{currentUser.middleName}}</td>
+        <td><strong>Last Name</strong></td>
+        <td>{{currentUser.lastName}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Billing Address</th>
+        <td>{{currentUser.address}}</td>
+        <td><strong>City</strong></td>
+        <td>{{currentUser.city}}</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Zip Code</th>
+        <td>{{currentUser.zip}}</td>
+        <td><strong>State</strong></td>
+        <td>{{currentUser.state}}</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div class="delivery">
+
+  <h5>Your delivery address is:</h5>
+  <table class="table">
+    <tbody>
+      <tr>
+        <th scope="row">Delivery address: </th>
+        <td>{{currentUser.permanentAddress}}</td>
+        <td><strong>City:</strong></td>
+        <td>{{currentUser.permanentCity}}</td>
+        <td><strong>Zip Code:</strong></td>
+        <td>{{currentUser.permanentZip}}</td>
+        <td><strong>State:</strong></td>
+        <td>{{currentUser.permanentState}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<a a [routerLink]="['/edit']" class="text-info">Edit your profile here</a>
+</div>

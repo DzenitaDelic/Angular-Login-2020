@@ -1,0 +1,18 @@
+
+div {
+    width: 90%;
+    align-content: center;
+}
+
+.profile {
+    margin: 10em;
+}
+.delivery {
+    margin-top: 7em;
+}
+
+.profile a  {
+    font-size: 20px;
+   float: right;
+   margin-right: 10em;
+}
